@@ -1,0 +1,110 @@
+@media(min-width:769px) and (max-width:1024px){
+    .desktopBanner,.mobBanner{
+        display:none;
+    }
+
+    .tabBanner{
+        display:block;
+        position: relative;
+        overflow:hidden;
+    }
+
+    .tabBanner>header{
+        opacity: 0.9;
+        background:linear-gradient(to right,black,rgb(33, 63, 44));
+        padding: 20px;
+        width: 100%;
+    }
+    .tabBanner>header>nav{
+        text-align: center;
+
+    }
+    .tabBanner>header>nav>ul{
+        list-style-type:none;
+    }
+        
+    .tabBanner>header>nav>ul>li{
+        padding:20px;
+        display:inline-block;}
+
+
+
+    .tabBanner>header>nav>ul>li:hover{
+        background-color: rgb(22, 86, 46);
+        color:white;
+        text-shadow: 2px 2px 2px black;}
+
+    .tabBanner>header>nav>ul>li>a{
+        color:white;
+        text-decoration: none;    
+    }
+    
+    .tabBanner>h1{
+        color:white;
+        font-variant: small-caps;
+        position: absolute;
+        top:400px;
+        left:250px;
+        font-size:30px;
+        padding: 10px;
+        text-shadow: 10px 10px 10px black;
+    }
+    .tabBanner>video{
+        width:100%;
+    }
+
+    .lastpara{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+    .desktopBanner,.tabBanner{
+        display:none;
+    }
+    .mobBanner{
+        display:block;
+        position: relative;
+        overflow:hidden
+    }
+    .mobBanner>header>center>img{
+        width:300px;
+    }
+    .mobBanner>header{
+        background: linear-gradient(to bottom,rgb(191, 168, 143),rgb(239, 231, 222));
+        padding:10px;
+    }
+    .mobBanner>header>nav{
+        text-align:center;
+    }
+    .mobBanner>header>nav>ul{
+        list-style-type: none;
+        padding:10px;
+    }
+    .mobBanner>header>nav>ul>li>a{
+        text-decoration: none;
+        color:brown;
+        font-size:15px;
+        font-variant: small-caps; 
+    }
+    .mobBanner>header>nav>ul>li{
+        padding:7px;
+    }
+    .mobBanner>header>nav>ul>li:hover{
+        background:rgb(127, 86, 43);
+    }
+    .mobBanner>header>nav>ul>li>a:hover{
+        color:blanchedalmond;
+    }
+    .mobBanner>header>h1{
+        color:brown;
+        text-align: center;
+        font-variant: small-caps;
+        font-size:20px;
+    }
+
+
+    [class*="col-"]{
+        width:100%;
+    }
+}

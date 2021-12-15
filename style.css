@@ -1,0 +1,122 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* desktop banner */
+.desktopBanner{
+    overflow: hidden;
+    position: relative;
+}
+.desktopBanner>video{
+    width:100%;
+}
+.desktopBanner>header>img{
+    float:left;
+    width:200px;
+}
+.desktopBanner>header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color: rgba(65, 136, 48, 0.5);
+}
+.desktopBanner>header>nav>ul{
+    list-style-type: none;
+    float:right;
+}
+.desktopBanner>header>nav>ul>li{
+    padding: 35px;
+    display:inline-block;
+}
+.desktopBanner>header>nav>ul>li>a{
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 20px;
+    color:rgb(226, 226, 226);
+    padding:10px;
+}
+.desktopBanner>header>nav>ul>li:hover{
+    background-color: darkgreen;
+}
+.desktopBanner>h1{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:35%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+/* Kerala List */
+.kerList{
+    text-align: center;
+}
+.kerList>h1, .info>h1{
+    font-size: 25px;
+    margin:20px auto;
+    color:black;
+    text-shadow: 2px 2px 2px grey;
+}
+.kerList>ul{
+    list-style-type: none;
+}
+.kerList>ul>li{
+    padding: 27px;
+    border:2px  ;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset, rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
+}
+
+/* info */
+.info{
+    text-align: justify;
+}
+.info>h1{
+    text-align: center;
+}
+.info > div{
+    background:linear-gradient(to right,rgb(110, 158, 128),rgb(178, 172, 149)) ;
+    padding: auto;
+    color:white;
+    line-height: 2;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(#000000,#0f9b0f);
+    color:grey;
+}
+
+/* grid */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"]{
+    float:left;
+    padding:20px;
+}
+.row::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.tabBanner,.mobBanner{
+    display: none;
+}
